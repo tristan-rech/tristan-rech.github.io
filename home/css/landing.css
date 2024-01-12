@@ -1,0 +1,292 @@
+body {
+    background-color: #09090B; /* Soft neutral black background */
+    color: grey; /* Default text color */
+    font-family: Arial, sans-serif; /* Change as needed */
+}
+
+/* Base button styles */
+button {
+    background-color: transparent; /* Transparent background initially */
+    color: #9CA3AF; /* Initial font color */
+    border: none; /* No border or adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold; /* Bold */
+    font-size: 16px;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #1A1A1D; 
+    color: #E4E4E7; /* Example of a brighter neutral color */
+}
+
+.profile-image img {
+    width: 200px; /* Adjust for different screen sizes */
+    height: 200px; /* Equal to width for a circle */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    object-fit: cover; /* Cover the frame */
+    object-position: center; /* Adjust if needed to focus on a specific part */
+    order: 2; /* Position the image to the right */
+}
+
+.profile-info {
+    order: 1; /* Position the text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row; /* Keep row direction for larger screens */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Space between image and text */
+}
+
+.page-title {
+    color: #E4E4E7; /* Font color */
+    font-size: 3rem; /* Large font size */
+    font-weight: 800; /* Extra bold */
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.name {
+    color: #E4E4E7; /* Font color for name */
+    font-size: 3rem; /* Large font for name */
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: #A1A1AA; /* Font color for title */
+    font-size: 2rem; /* Slightly smaller font for job title */
+    margin-bottom: 1rem;
+}
+
+.biography {
+    color: #9CA3AF; /* Font color for paragraph */
+    font-size: 1rem; /* Small font for paragraph */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px; /* Space between nav-bar and profile info */
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for each button type */
+.button.github:hover {
+    background-color: #1A1A1D;
+    color: #B39DDB; /* Specific hover color for GitHub button */
+}
+
+.button.linkedin:hover {
+    background-color: #1A1A1D;
+    color: #4a90e2; /* Specific hover color for LinkedIn button */
+}
+
+.button.email:hover {
+    background-color: #1A1A1D;
+    color: #c26161; /* Specific hover color for Email button */
+}
+
+/* Projects button hover */
+.button.projects:hover {
+    background-color: #1A1A1D;
+    color: #A5D6A7; /* Soft Green for Projects */
+}
+
+/* Experience button hover */
+.button.experience:hover {
+    background-color: #1A1A1D;
+    color: #E57373; /* Muted Red for Experience */
+}
+
+/* Resume button hover */
+.button.resume:hover {
+    background-color: #1A1A1D;
+    color: #FFF59D; /* Earthy Orange for Resume */
+}
+
+.button.home:hover {
+    background-color: #1A1A1D;
+    color: #f5bff3; /* Earthy Orange for Resume */
+}
+
+.svg-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.central-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.max-width-container {
+    max-width: 80rem; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar, .profile-container {
+    padding-left: 20px; /* Left padding */
+    padding-right: 20px; /* Right padding */
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        order: 1; /* Image on top for mobile */
+    }
+
+    .profile-info {
+        order: 2; /* Text below the image for mobile */
+    }
+
+    .profile-image img {
+        width: 200px; /* Smaller width for small screens */
+        height: 200px; /* Smaller height for small screens */
+    }
+
+    .name {
+        font-size: 36px; /* Size for name on small screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .page-title{
+        font-size: 36px; /* Size for name on small screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .title {
+        font-size: 20px; /* Size for title on small screens */
+        font-weight: bold; /* Bold */
+    }
+
+    .biography {
+        font-size: 16px; /* Size for paragraph on small screens */
+        font-weight: normal; /* No bold */
+    }
+}
+
+/* Intermediate screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .profile-container {
+        /* Ensure row direction is maintained */
+        flex-direction: row;
+    }
+
+    .profile-image {
+        order: 2; /* Image to the right */
+    }
+
+    .profile-info {
+        order: 1; /* Text to the left */
+    }
+    
+    .profile-image img {
+        width: 256px; /* Width for intermediate screens */
+        height: 256px; /* Height for intermediate screens */
+    }
+
+    .name {
+        font-size: 60px; /* Size for name on medium screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .page-title{
+        font-size: 60px; /* Size for name on small screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .title {
+        font-size: 20px; /* Size for title on medium screens */
+        font-weight: bold; /* Bold */
+    }
+
+    .biography {
+        font-size: 16px; /* Size for paragraph on medium screens */
+        font-weight: normal; /* No bold */
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .profile-container {
+        /* Ensure row direction is maintained */
+        flex-direction: row;
+    }
+
+    .profile-image {
+        order: 2; /* Image to the right */
+    }
+
+    .profile-info {
+        order: 1; /* Text to the left */
+    }
+
+    .profile-image img {
+        width: 400px; /* Larger width for large screens */
+        height: 400px; /* Larger height for large screens */
+    }
+
+    .name {
+        font-size: 96px; /* Size for name on large screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .page-title{
+        font-size: 72px; /* Size for name on small screens */
+        font-weight: 800; /* Extra bold */
+    }
+
+    .title {
+        font-size: 30px; /* Size for title on large screens */
+        font-weight: bold; /* Bold */
+    }
+
+    .biography {
+        font-size: 20px; /* Size for paragraph on large screens */
+        font-weight: normal; /* No bold */
+    }
+    
+}
