@@ -47,11 +47,6 @@ button:hover {
     display: flex;
 }
 
-.hamburger-menu {
-    padding: 10px 15px; /* Adjust the padding as needed */
-    /* Other styles */
-}
-
 .profile-image img {
     width: 200px; /* Adjust for different screen sizes */
     height: 200px; /* Equal to width for a circle */
@@ -191,8 +186,9 @@ button:hover {
 }
 
 .nav-bar, .profile-container {
-    padding-left: 20px; /* Left padding */
-    padding-right: 20px; /* Right padding */
+    max-width: 80rem; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Small screens */
