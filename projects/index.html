@@ -5,42 +5,48 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="../home/css/landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Experience</title>
+    <title>Tristan's Projects</title>
 </head>
 
 <body>
     <div class="central-container">
         <!-- Navigation Bar -->
-        <nav class="nav-bar max-width-container">
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <!-- Home Button -->
-                <a href="/home">
-                    <button class="button home">
-                        Home
-                    </button>
-                </a>
+        <nav class="nav-bar">
+            <div class="max-width-container">
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    &#9776; 
+                </button>
 
-                <!-- Projects Button -->
-                <a href="/projects/index.html">
-                    <button class="button projects">
-                        Projects
-                    </button>
-                </a>
+                <!-- Navigation Links -->
+                <div class="nav-links" id="navLinks">
+                    <!-- Home Button -->
+                    <a href="/home">
+                        <button class="button home">
+                            Home
+                        </button>
+                    </a>
 
-                <!-- Experience Button -->
-                <a href="/experience/index.html">
-                    <button class="button experience">
-                        Experience
-                    </button>
-                </a>
-                
-                <!-- Resume Button -->
-                <a href="/home/media/Tristan Pedro Portfolio Resume.pdf" target="_blank">
-                    <button class="button resume">
-                        Resume
-                    </button>
-                </a>
+                    <!-- Projects Button -->
+                    <a href="/projects">
+                        <button class="button projects">
+                            Projects
+                        </button>
+                    </a>
+
+                    <!-- Experience Button -->
+                    <a href="/experience">
+                        <button class="button experience">
+                            Experience
+                        </button>
+                    </a>
+                    
+                    <!-- Resume Button -->
+                    <a href="/home/media/Tristan Pedro Portfolio Resume.pdf" target="_blank">
+                        <button class="button resume">
+                            Resume
+                        </button>
+                    </a>
             </div>
 
             <!-- Social Links -->
@@ -61,13 +67,19 @@
                     </button>
                 </a>
             </div>
+        </div>
         </nav>
 
         <!-- Main Content Section -->
-        <div class="content-container max-width-container">
-            <h1 class="page-title">Projects</h1>
-            <!-- Content for the Projects page goes here -->
-        </div>
+        <h1 class="page-title">Projects</h1>
+
     </div>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
