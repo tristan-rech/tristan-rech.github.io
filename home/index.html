@@ -12,31 +12,37 @@
 <body>
     <div class="central-container">
         <!-- Navigation Bar -->
-        <nav class="nav-bar max-width-container">
-            <!-- Navigation Links -->
-            <div class="nav-links">
+        <nav class="nav-bar">
+            <div class="max-width-container">
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    &#9776; 
+                </button>
 
-                <!-- Projects Button -->
-                <a href="/projects">
-                    <button class="button projects">
-                        Projects
-                    </button>
-                </a>
+                <!-- Navigation Links -->
+                <div class="nav-links" id="navLinks">
 
-                <!-- Experience Button -->
-                <a href="/experience">
-                    <button class="button experience">
-                        Experience
-                    </button>
-                </a>
-                
-                <!-- Resume Button -->
-                <a href="/home/media/Tristan Pedro Portfolio Resume.pdf" target="_blank">
-                    <button class="button resume">
-                        Resume
-                    </button>
-                </a>
-    </div>
+                    <!-- Projects Button -->
+                    <a href="/projects">
+                        <button class="button projects">
+                            Projects
+                        </button>
+                    </a>
+
+                    <!-- Experience Button -->
+                    <a href="/experience">
+                        <button class="button experience">
+                            Experience
+                        </button>
+                    </a>
+                    
+                    <!-- Resume Button -->
+                    <a href="/home/media/Tristan Pedro Portfolio Resume.pdf" target="_blank">
+                        <button class="button resume">
+                            Resume
+                        </button>
+                    </a>
+            </div>
 
             <!-- Social Links -->
             <div class="social-links">
@@ -56,6 +62,7 @@
                     </button>
                 </a>
             </div>
+        </div>
         </nav>
 
         <!-- Profile Information Container -->
@@ -80,5 +87,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
 </body>
 </html>
+
