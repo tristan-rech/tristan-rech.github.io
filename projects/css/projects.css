@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'General Sans';
+    src: url('subset-GeneralSans-Regular.woff2') format('woff2'),
+        url('subset-GeneralSans-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('subset-CabinetGrotesk-Black.woff2') format('woff2'),
+        url('subset-CabinetGrotesk-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: optional;
+}
+
+.project-page-title, .project-title, .project-date, .project-tags, .project-link, .project-tag{
+    font-family: 'General Sans', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+.project-description {
+    font-family: 'Cabinet Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Spacing between project sections */
+}
+
+.project-info {
+    max-width: 50%;
+}
+
+.project-page-title {
+    color: #E4E4E7; /* Font color */
+    font-size: 4rem; /* Large font size */
+    font-weight: 800; /* Extra bold */
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+.project-title {
+    font-weight: bold;
+    color: #B39DDB;
+    font-size: 1.5rem;
+    margin-right: 20px; /* Spacing between title and date */
+    margin-bottom: 0.2rem;
+}
+
+.project-date {
+    font-size: 1.0rem;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.project-description {
+    color: #9CA3AF; /* Font color for paragraph */
+    font-size: 1rem; /* Small font for paragraph */
+    letter-spacing: 0.025em;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    font-size: 0.9rem;
+    color: #9CA3AF;
+}
+
+.project-link {
+    color: #4a90e2; /* Link color */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.project-image {
+    max-width: 45%;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional */
+}
+
+.title-date-container {
+    display: flex;
+    align-items: center; /* To vertically align title and date */
+    flex-wrap: wrap; /* Prevents wrapping, you can adjust as needed */
+}
+
+.project-tags-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px; /* Spacing between tags and link */
+}
+
+.project-tag {
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 0.025em;
+    background-color: transparent; /* Transparent background initially */
+    color: #E4E4E7; /* Initial font color */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    background-color: #1A1A1D;
+}
+
+.project-tag:hover {
+    background-color: #1A1A1D;
+    color: #E4E4E7;
+}
+
+.project-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 0.025em;
+    background-color: transparent;
+    border: 1px solid #4a90e2;
+    border-radius: 10px; /* Rounded corners */
+    padding: 6px 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+background-color: #4a90e2;
+color: #E4E4E7;
+}
+
+/* Responsive Design for Medium and Small Screens */
+@media (max-width: 1293px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-info, .project-image {
+        max-width: 80%;
+    }
+
+    .project-image {
+        margin-top: 30px; /* Spacing between info and image */
+    }
+    
+}
+
+.project-central-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers all children */
+    justify-content: center;
+    min-height: auto;
+    padding: 20px;
+}
+
+.project-content-container {
+    width: 100%;
+}
+
+.project-max-width-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between nav-bar and profile info */
+}

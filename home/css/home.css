@@ -1,7 +1,32 @@
+@font-face {
+    font-family: 'General Sans';
+    src: url('subset-GeneralSans-Regular.woff2') format('woff2'),
+        url('subset-GeneralSans-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('subset-CabinetGrotesk-Black.woff2') format('woff2'),
+        url('subset-CabinetGrotesk-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: optional;
+}
+
+.name, .button, .page-title, .title {
+    font-family: 'General Sans', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+.biography {
+    font-family: 'Cabinet Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
 body {
     background-color: #09090B; /* Soft neutral black background */
     color: grey; /* Default text color */
-    font-family: Arial, sans-serif; /* Change as needed */
 }
 
 /* Base button styles */
@@ -97,6 +122,9 @@ button:hover {
 .biography {
     color: #9CA3AF; /* Font color for paragraph */
     font-size: 1rem; /* Small font for paragraph */
+    letter-spacing: 0.025em;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .nav-bar {
@@ -169,7 +197,7 @@ button:hover {
     flex-direction: column;
     align-items: center; /* This centers all children */
     justify-content: center;
-    min-height: 70vh;
+    min-height: auto;
     padding: 20px;
 }
 
@@ -329,6 +357,8 @@ button:hover {
 
     .hamburger-menu {
         display: block;
+        font-size: 30px; /* Size of the icon */
+        font-weight: 1;
     }
 
     .nav-links {
@@ -382,5 +412,4 @@ button:hover {
         gap: 10px;
         order: 3; /* Position the social links at the end */
     }
-
 }
