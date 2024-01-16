@@ -53,12 +53,12 @@
 
             <!-- Social Links -->
             <div class="social-links">
-                <a href="https://github.com/tripedro">
+                <a href="https://github.com/tripedro" target="_blank">
                     <button class="button github">
                         <i class="fa fa-github" style="font-size:32px;"></i>
                     </button>
                 </a>
-                <a href="https://www.linkedin.com/in/tripedro/">
+                <a href="https://www.linkedin.com/in/tripedro/" target="_blank">
                     <button class="button linkedin">
                         <i class="fa fa-linkedin-square" style="font-size:32px"></i>
                     </button>
@@ -76,21 +76,31 @@
         <!-- Main Content Section -->
         <h1 class="project-page-title">Projects</h1>
 
+        <!-- Project 1 Section -->
         <div class="project-central-container">
             <div class="project-max-width-container">
-                <!-- Project 1 Section -->
                 <div class="project">
                     <div class="project-info">
                         <div class="title-date-container">
                             <h2 class="project-title">ALVI: Self-Supervised Data Labling Tool</h2>
                             <p class="project-date">May 2022-Present</p>
                         </div>
-                        <p class="project-description">I'm an undergraduate Computer Science student at Texas State University with a passion for problem-solving and a commitment to excellence. Through my coursework and research, I've developed strong skills in programming languages such as Python, C++, and Java. I'm eager to apply these skills to real-world challenges and gain experience in various computer science fields.</p>
+                        <p class="project-description">● Engaged in the REU Summer Research in Edge Computing, emphasizing semi-supervised
+                            labeling of sensor-generated time-series data</p>
+                            <p class="project-description">● Continuously developed and enhanced a deep-learning-based application for biomedical data
+                            visualization, labeling, and modeling throughout the research duration</p>
+                            <p class="project-description">● Co-authored and contributed to a research paper on signal processing and machine learning,
+                            presented at the SPACE Workshop during ICASSP 2023 in Rhodes, Greece</p>
                         <div class="project-tags-links">
-                            <a href="[Technology Homepage]" class="project-tag">Python</a>
-                            <a href="[Technology Homepage]" class="project-tag">Dash</a>
-                            <!-- More tags as needed -->
-                            <a href="https://github.com/imics-lab/time-series-label-assist" class="project-link">GitHub/Demo</a>
+                            <a href="https://www.python.org/doc/" class="project-tag" target="_blank">Python</a>
+                            <a href="https://dash.plotly.com/" class="project-tag" target="_blank">Dash</a>
+                            <a href="https://numpy.org/doc/stable/" class="project-tag" target="_blank">NumPy</a>
+                            <a href="https://pandas.pydata.org/docs/" class="project-tag" target="_blank">Pandas</a>
+                            <a href="https://scikit-learn.org/stable/" class="project-tag" target="_blank">scikit-learn</a>
+                            <a href="https://umap-learn.readthedocs.io/en/latest/" class="project-tag" target="_blank">UMAP</a>
+                            <a href="https://github.com/imics-lab/time-series-label-assist" class="github-link" target="_blank">
+                                <i class="fa fa-github" style="font-size:24px;"></i> GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="project-image">
@@ -98,6 +108,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Project 2 Section -->
+        <div class="project-central-container">
+            <div class="project-max-width-container">
+                <div class="project">
+                    <div class="project-info">
+                        <div class="title-date-container">
+                            <h2 class="project-title">MRI Brain Tumor Detection</h2>
+                            <p class="project-date">December 2023</p>
+                        </div>
+                        <p class="project-description">● Preprocessed a Kaggle <a href="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset" target="_blank" class="custom-link">MRI brain image dataset</a> and dove into why deep learning, especially <a href="https://www.arm.com/glossary/convolutional-neural-network#:~:text=A%20convolutional%20neural%20network%20(CNN)%20is%20a%20type%20of%20artificial,to%20recognize%20patterns%20in%20images." target="_blank" class="custom-link">Convolutional Neural Networks (CNNs)</a>, work well for brain tumor detection on MRI images. There is a Jupyter Notebook titled "tumor-classification-cnn.ipynb" that walks through building and tuning a CNN model, showing how it's great for image classification, especially with medical images like MRIs
+                            </p>
+                            <p class="project-description">● The choice of deep learning was driven by its proven capability in handling complex image recognition tasks, and CNNs were selected due to their effectiveness in image classification problems, particularly in identifying patterns and features in medical imaging</p>
+                            <p class="project-description">● Following the development and fine-tuning of the CNN model in the notebook, this project extends to the realm of practical application through a web interface. Built with Flask, the web application leverages the trained CNN model to provide real-time predictions on pre-loaded MRI images (subset of the test set). This integration not only showcases the model's capabilities in a user-friendly format but also demonstrates the potential of deep learning models in real-world applications</p>
+                            <p class="project-description">● Initial loading time for the demo webpage will be longer than usual. This is due to the contraints associated with using a free deployment service through <a href="https://render.com" target="_blank" class="custom-link">Render.com</a>.</p>
+                        <div class="project-tags-links">
+                            <a href="https://www.python.org/doc/" class="project-tag" target="_blank">Python</a>
+                            <a href="https://www.tensorflow.org/overview" class="project-tag" target="_blank">TensorFlow</a>
+                            <a href="https://keras.io/about/" class="project-tag" target="_blank">Keras</a>
+                            <a href="https://flask.palletsprojects.com/en/3.0.x/" class="project-tag" target="_blank">Flask</a>
+                            <a href="https://numpy.org/doc/stable/" class="project-tag" target="_blank">NumPy</a>
+                            <a href="https://pandas.pydata.org/docs/" class="project-tag" target="_blank">Pandas</a>
+                            <a href="https://github.com/tripedro/MRI-Brain-Tumor-Detection" class="github-link" target="_blank">
+                                <i class="fa fa-github" style="font-size:24px;"></i> GitHub
+                            </a>
+                            <a href="https://mri-brain-tumor-detection.onrender.com/" class="custom-project-link" target="_blank">
+                                <i class="fa fa-external-link" style="font-size:20px;"></i> View Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="../projects/media/brain_tumor_detection_demo.jpg" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </div>
 
     <script>

@@ -36,7 +36,7 @@
 }
 
 .project-page-title {
-    color: #E4E4E7; /* Font color */
+    color: #E8E8E3; /* Font color */
     font-size: 4rem; /* Large font size */
     font-weight: 800; /* Extra bold */
     margin-bottom: 3rem;
@@ -54,22 +54,17 @@
 
 .project-date {
     font-size: 1.0rem;
-    color: grey;
+    color: #666666;
     font-style: italic;
     margin-bottom: 0.2rem;
 }
 
 .project-description {
-    color: #9CA3AF; /* Font color for paragraph */
+    color: #D1D1C7; /* Font color for paragraph */
     font-size: 1rem; /* Small font for paragraph */
     letter-spacing: 0.025em;
     line-height: 1.75rem;
     margin-bottom: 1.5rem;
-}
-
-.project-tags {
-    font-size: 0.9rem;
-    color: #9CA3AF;
 }
 
 .project-image {
@@ -93,43 +88,77 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .project-tag {
-    padding: 6px 14px;
+    padding: 10px 14px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 200;
     letter-spacing: 0.025em;
     background-color: transparent; /* Transparent background initially */
-    color: #E4E4E7; /* Initial font color */
+    color: #D1D1C7; /* Initial font color */
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
     background-color: #1A1A1D;
 }
 
 .project-tag:hover {
-    background-color: #1A1A1D;
-    color: #E4E4E7;
+    background-color: #AEAE9D;
+    color: #000000;
 }
 
-.project-link {
-    color: #4a90e2;
+/* GitHub Link */
+.github-link {
+    margin-left: auto;
+    gap: 10px; /* Space between icon and text */
+    color: #D1D1C7;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 200;
     letter-spacing: 0.025em;
     background-color: transparent;
-    border: 1px solid #4a90e2;
-    border-radius: 10px; /* Rounded corners */
-    padding: 6px 14px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-left: auto;
+    border-radius: 10px;
+    padding: 10px 24px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    background-color: #1A1A1D;
 }
 
-.project-link:hover {
-background-color: #4a90e2;
-color: #E4E4E7;
+.github-link:hover {
+    background-color: #AEAE9D;
+    color: #000000;
+}
+
+/* Custom Project Link */
+.custom-project-link {
+    margin-left: auto;
+    gap: 10px; /* Space between icon and text */
+    color: #D1D1C7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 200;
+    letter-spacing: 0.025em;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 24px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    background-color: #1A1A1D;
+}
+
+.custom-project-link:hover {
+    background-color: #AEAE9D;
+    color: #000000;
+}
+
+.custom-link {
+    color: #4a90e2; /* Change to your desired color */
+    text-decoration: none; /* Optional: removes the underline */
+}
+
+.custom-link:hover {
+    color: #3b78e0; /* Slightly darker shade for hover effect */
+    text-decoration: underline; /* Optional: adds underline on hover */
 }
 
 /* Responsive Design for Medium and Small Screens */
@@ -145,6 +174,10 @@ color: #E4E4E7;
 
     .project-image {
         margin-top: 30px; /* Spacing between info and image */
+    }
+
+    .github-link, .custom-project-link{
+        margin-top: 10px;
     }
     
 }
